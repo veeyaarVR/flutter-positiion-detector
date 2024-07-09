@@ -10,7 +10,7 @@ import io.flutter.plugin.common.MethodChannel
 class MainActivity : FlutterActivity() {
     private val CHANNEL = "camera_channel"
     private var resultData : MethodChannel.Result? = null
-    override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {
+    override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
         val methodChannel =
             MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL)
